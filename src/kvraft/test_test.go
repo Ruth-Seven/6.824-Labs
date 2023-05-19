@@ -1,7 +1,7 @@
 package kvraft
 
-import "../porcupine"
-import "../models"
+import "6.824/mapreduce/porcupine"
+import "6.824/mapreduce/models"
 import "testing"
 import "strconv"
 import "time"

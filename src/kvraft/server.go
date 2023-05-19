@@ -1,10 +1,10 @@
 package kvraft
 
 import (
-	"../labgob"
-	"../labrpc"
+	"6.824/mapreduce/labgob"
+	"6.824/mapreduce/labrpc"
 	"log"
-	"../raft"
+	"6.824/mapreduce/raft"
 	"sync"
 	"sync/atomic"
 )

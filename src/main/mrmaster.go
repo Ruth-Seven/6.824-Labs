@@ -2,14 +2,14 @@ package main
 
 //
 // start the master process, which is implemented
-// in ../mr/master.go
+// in 6.824/mapreduce/mr/master.go
 //
 // go run mrmaster.go pg*.txt
 //
 // Please do not change this file.
 //
 
-import "../mr"
+import "6.824/mapreduce/mr"
 import "time"
 import "os"
 import "fmt"

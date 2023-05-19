@@ -1,6 +1,6 @@
 package models
 
-import "../porcupine"
+import "6.824/mapreduce/porcupine"
 import "fmt"
 import "sort"
 

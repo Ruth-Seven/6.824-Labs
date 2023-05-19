@@ -1,11 +1,11 @@
 package shardkv
 
 
-// import "../shardmaster"
-import "../labrpc"
-import "../raft"
+// import "6.824/mapreduce/shardmaster"
+import "6.824/mapreduce/labrpc"
+import "6.824/mapreduce/raft"
 import "sync"
-import "../labgob"
+import "6.824/mapreduce/labgob"
 
 
 
