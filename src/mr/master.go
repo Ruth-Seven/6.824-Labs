@@ -34,7 +34,7 @@ type Master struct {
 	reduceFinished     atomic.Int32
 	reducePendingIndex atomic.Int32
 
-	//
+	//Recovery
 	waitingJobs        []Task
 	maxWaitingDuraiton time.Duration
 }
