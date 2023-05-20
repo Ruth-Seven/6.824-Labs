@@ -46,7 +46,6 @@ sleep 1
 timeout -k 2s 180s ../mrworker ../../mrapps/wc.so &
 timeout -k 2s 180s ../mrworker ../../mrapps/wc.so &
 timeout -k 2s 180s ../mrworker ../../mrapps/wc.so &
-
 # wait for one of the processes to exit.
 # under bash, this waits for all processes,
 # including the master.
@@ -70,6 +69,8 @@ fi
 wait ; wait ; wait
 
 # now indexer
+mkdir ../mr-tmp-wc
+cp * ../mr-tmp-wc
 rm -f mr-*
 
 # generate the correct output

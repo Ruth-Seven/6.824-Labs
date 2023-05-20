@@ -9,30 +9,42 @@ package mr
 import (
 	"os"
 	"strconv"
+	"time"
 )
 
 type Status int
 
 const (
-	Available Status = itoa
+	Available Status = iota
 	Busy
+	Finshed
 )
 
 type MapReduceType int
 
 const (
-	Map MapReduceType = itoa
+	Map MapReduceType = iota
 	Reduce
 )
 
-type ExampleArgs struct {
-	status Status
+type Task struct {
+	TaskNo   int32
+	SendTime time.Time
+	MrType   MapReduceType
+	Kvs      KVs
+	Done     bool
+	Wait     bool
 }
 
-type ExampleReply struct {
-	mrType MapReduceType
-	kas    []mr.KeyValue
-	taskNo int32
+type Args struct {
+	Status     Status
+	RegisterID int32
+	Job        Task
+}
+
+type Reply struct {
+	RegisterID int32
+	Job        Task
 }
 
 // Add your RPC definitions here.
